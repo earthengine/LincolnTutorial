@@ -31,7 +31,67 @@
         <div class="jumbotron">
             <H1>Lincoln Playground</H1>
             <a href="https://github.com/earthengine/Lincoln" rel="author">by Earth Engine</a>
-            <textarea id="program" class="form-control"></textarea>
+            <textarea id="program" class="form-control">
+                {
+                    "defined_ent": { 
+                      "copy_int": { "index": 6 },
+                      "drop_int": { "index": 20 },
+                      "fact": { "index": 2 },
+                      "fact1": { "index": 1 },
+                      "fact10": { "index": 13 },
+                      "fact11": { "index": 15 },
+                      "fact12": { "index": 16 },
+                      "fact13": { "index": 18 },
+                      "fact15": { "index": 14 },
+                      "fact16": { "index": 19 },
+                      "fact17": { "index": 21 },
+                      "fact18": { "index": 22 },
+                      "fact19": { "index": 23 },
+                      "fact2": { "index": 3 },
+                      "fact20": { "index": 24 },
+                      "fact3": { "index": 4 },
+                      "fact4": { "index": 0 },
+                      "fact5": { "index": 5 },
+                      "fact6": { "index": 7 },
+                      "fact7": { "index": 8 },
+                      "fact8": { "index": 10 },
+                      "fact9": { "index": 12 },
+                      "mul": { "index": 17 },
+                      "one": { "index": 9 },
+                      "try_minus": { "index": 11 }
+                    },
+                    "entries": [
+                      { "Jmp": { "cont": { "index": 5 }, "per": 1 } },
+                      { "Group": { "elements": [ { "index": 2 }, { "index": 3 } ] } },
+                      { "Call": { "callcnt": 2, "callcont": { "index": 1 }, "callee": { "index": 0 } } },
+                      { "Jmp": { "cont": { "index": 4 }, "per": 1 } },
+                      { "Ret": { "variant": 0 } },
+                      { "Call": { "callcnt": 1, "callcont": { "index": 7 }, "callee": { "index": 6 } } },
+                      { "Extern": { "name": "copy_int" } },
+                      { "Call": { "callcnt": 4, "callcont": { "index": 9 }, "callee": { "index": 8 } } },
+                      { "Jmp": { "cont": { "index": 10 }, "per": 48 } },
+                      { "Extern": { "name": "one" } },
+                      { "Call": { "callcnt": 2, "callcont": { "index": 12 }, "callee": { "index": 11 } } },
+                      { "Extern": { "name": "try_minus" } }, 
+                      { "Group": { "elements": [{ "index": 13 }, { "index": 14 }]} },
+                      { "Jmp": { "cont": { "index": 15 }, "per": 21 } },
+                      { "Jmp": { "cont": { "index": 19 }, "per": 70 } },
+                      { "Call": { "callcnt": 2, "callcont": { "index": 17 }, "callee": { "index": 16 } } },
+                      { "Jmp": { "cont": { "index": 18 }, "per": 2 } },
+                      { "Extern": { "name": "mul" } },
+                      { "Ret": { "variant": 0 } },
+                      { "Call": { "callcnt": 1, "callcont": { "index": 21 }, "callee": { "index": 20 } } },
+                      { "Extern": { "name": "drop_int" } },
+                      { "Call": { "callcnt": 1, "callcont": { "index": 22 }, "callee": { "index": 20 } } },
+                      { "Call": { "callcnt": 1, "callcont": { "index": 4  }, "callee": { "index": 23 } } },
+                      { "Jmp": { "cont": { "index": 24 }, "per": 1 } },
+                      { "Ret": { "variant": 1 } }
+                    ],
+                    "exports": [
+                      "fact"
+                    ]
+                  }
+            </textarea>
             <form class="form-inline" role="form">
                 <label for="input">Input: </label><input type="number" class="form-control" value="10" id="input">
             </form>
